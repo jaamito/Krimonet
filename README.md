@@ -9,7 +9,7 @@
 
 ## Krimonet
 
-Proyecto en construcción (Guía de instalación de un nuevo proyecto):
+**Proyecto en construcción (Guía de instalación de un nuevo proyecto):**
 
 - $composer create-project laravel/laravel miweb --prefer-dist
 - $php composer dump-autoload
@@ -20,6 +20,16 @@ Proyecto en construcción (Guía de instalación de un nuevo proyecto):
 - $php artisan ui "bootstrap/vue/react" (Instalamos libreria de estilos)
 - $npm install && npm run dev (Compilamos las librerias de "bootstrap/vue/react")
 - $php artisan ui (Creamos las views y si existen las remplaza)
+
+**Instalación Krimonet**
+
+- $git clone https://github.com/jaamito/Krimonet.git
+- $composer update
+- $cp .env.example .env
+- $composer dump-autoload
+- Crear BBDD en local
+- $php artisan migrate
+
 
 
 ## Documentación
