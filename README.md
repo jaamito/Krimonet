@@ -30,7 +30,24 @@
 - Crear BBDD en local
 - $php artisan migrate
 
+## Idea
+Crear un proyecto donde se cubra la necesidad de gestionar la agenda de empresas de servicio de proximidad 
+(peluquerías, estilistas, fisios, masajes, dentistas, etc).
 
+Servicios Modulares:
+- Gestor de clientes
+- Gestor de recursos (empleados / máquinas / Boxes)
+- Gestor de agenda por recursos
+- Gestor de sedes
+- Gestor de productos / Servicios
+- Web corporativa
+
+Plugins:
+- Facturación
+
+Dispositivos:
+- Tablet de gestión - Terminal
+- Terminal de ticket de turno
 
 ## Documentación
 
