@@ -10,8 +10,10 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
+	<script src="{{ asset('js/jquery-3.4.1.slim.min.js') }}" defer></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
-
+	@yield('scripts')
+	
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
