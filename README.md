@@ -50,7 +50,7 @@ Dispositivos:
 - Terminal de ticket de turno
 
 ## Documentación
-*Section :: Registro*
+###Section :: Registro###
 En el proceso de registro se realiza en dos pasos, el primero se da de alta el establecimiento, dicho establecimiento internamente (Base de datos) se desglosará 
 como franquicia (Entidad: franchises) y como establecimiento como tal (Entidad: stores), los datos que se pedirán son: Nombre Comercial, Dirección completa, 
 posicionamiento en google maps (automática), imagen (ésta se guardará como franquicia, dejando el campo imagen de la entidad store a nulo.
@@ -60,9 +60,9 @@ El segundo paso daremos de alta el usuario, dicho usuario, que será en calidad 
 Nombre, email (único y obligatorio), verificación de email, contraseña y verificación de contraseña (deben ser fuerte y pondremos un medidor de fuerza, 
 [minúsculas, mayúsculas, números y una longitud mínima de 8 carácteres]
 
-*Permisos por tipología*
-- BRAND
-	- Gestor de sedes:
+####Permisos por tipología####
+- **BRAND**
+	- *Gestor de sedes*:
 		- [system_user_relation_types = administrator]
 			- Podrá crear franquicias
 			- Podrá crear establecimientos y grupos (stores)
@@ -73,8 +73,8 @@ Nombre, email (único y obligatorio), verificación de email, contraseña y veri
 			- Podrá ver/modificar cualquier dato de los establecimientos que están en su ámbito (franquicia/s, grupo/s)
 		- [system_user_relation_types = user]
 			- Podrá ver cualquier dato de los establecimientos que están en su ámbito (franquicia/s, grupo/s)
-- FRANCHISE
-	- Gestor de sedes:
+- **FRANCHISE**
+	- *Gestor de sedes*:
 		- [system_user_relation_types = administrator]
 			- Podrá crear establecimientos y grupos (stores)
 			- Podrá asignar/modificar establecimiento de grupos dentro de una misma franquicia/s asignadas al usuario.
@@ -84,8 +84,8 @@ Nombre, email (único y obligatorio), verificación de email, contraseña y veri
 			- Podrá ver/modificar cualquier dato de los establecimientos que están en su ámbito (franquicia/s, grupo/s)
 		- [system_user_relation_types = user]
 			- Podrá ver cualquier dato de los establecimientos que están en su ámbito (franquicia/s, grupo/s)
-- STORE
-	- Gestor de sedes:
+- **STORE**
+	- *Gestor de sedes*:
 		- [system_user_relation_types = administrator]
 			- Podrá crear establecimientos y grupos (stores)
 			- Podrá ver/modificar cualquier dato de los establecimientos que están en su ámbito (grupo/s)
@@ -94,7 +94,7 @@ Nombre, email (único y obligatorio), verificación de email, contraseña y veri
 		- [system_user_relation_types = user]
 			- No tienen acceso a esta sección.
 
-*Section :: Gestor de sedes*
+###Section :: Gestor de sedes###
 
 ## Krimonet Sponsors
 
