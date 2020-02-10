@@ -94,7 +94,7 @@ Nombre, email (único y obligatorio), verificación de email, contraseña y veri
 		- [system_user_relation_types = user]
 			- No tienen acceso a esta sección.
 
-######Section :: Gestor de sedes
+### Section :: Gestor de sedes
 
 ## Krimonet Sponsors
 
