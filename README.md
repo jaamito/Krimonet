@@ -60,6 +60,8 @@ El segundo paso daremos de alta el usuario, dicho usuario, que será en calidad 
 Nombre, email (único y obligatorio), verificación de email, contraseña y verificación de contraseña (deben ser fuerte y pondremos un medidor de fuerza, 
 [minúsculas, mayúsculas, números y una longitud mínima de 8 carácteres]
 
+![BD :: Accounts](/docs/Krimonet_Accounts_DB.png)
+
 #### Permisos por tipología
 - **BRAND**
 	- *Gestor de sedes*:
