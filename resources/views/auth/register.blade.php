@@ -14,7 +14,6 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
-
 						<div class="knet_step knet_company">
 							<h3>{{ __('Company Information') }}</h3>
 							<section>
@@ -31,7 +30,7 @@
 										@enderror
 									</div>
 								</div>
-								
+
 								<div class="form-group row mb-0">
 									<div class="col-md-6 offset-md-4">
 										<button type="button" class="knet_register_company_next_button btn btn-primary">
