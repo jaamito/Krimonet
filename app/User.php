@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password','type'
+        'user_name', 'user_email', 'user_password','user_type'
     ];
 
     /**
@@ -25,7 +25,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'user_password', 'remember_token',
     ];
 
     /**
@@ -36,4 +36,22 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function getAuthPassword(){
+        return $this->user_password;
+    }
+	
+    public function stores(){
+        return $this->belongsToMany(Store::class);
+    }
+	
+	public function franchises(){
+        //return $this->belongsToMany(Franchise::class);
+		return $this->belongsToMany("App\Franchise");//->using('App\UserFranchise');
+    }
+
+	public function brands(){
+        //return $this->belongsToMany(Franchise::class);
+		return $this->belongsToMany("App\Brand");//->using('App\UserFranchise');
+    }
 }

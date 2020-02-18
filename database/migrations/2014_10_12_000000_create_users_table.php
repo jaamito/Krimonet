@@ -14,12 +14,12 @@ class CreateUsersTable extends Migration{
 		if (!Schema::hasTable('users')) {
 			Schema::create('users', function (Blueprint $table) {
 				$table->increments('id')->unsigned();
-				$table->enum('type', ["admin", "promotor", "client"])->nullable();
-				$table->string('login', 15)->unique();
-				$table->string('name', 45);
-				$table->string('email', 128)->unique();
+				$table->enum('user_type', ["admin", "promotor", "client"])->nullable();
+				$table->string('user_login', 15)->unique();
+				$table->string('user_name', 45);
+				$table->string('user_email', 128)->unique();
 				$table->timestamp('email_verified_at')->nullable();
-				$table->string('password', 64);
+				$table->string('user_password', 64);
 				$table->rememberToken();
 				$table->timestamps();
 			});

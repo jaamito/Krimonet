@@ -14,9 +14,9 @@ class CreateFranchisesTable extends Migration{
 		if (!Schema::hasTable('franchises')) {
 			Schema::create('franchises', function (Blueprint $table) {
 				$table->increments('id')->unsigned();
-				$table->string('name', 45);
+				$table->string('franchise_name', 45);
 				$table->integer('brand_id');
-				$table->string('url_logo', 128);
+				$table->string('franchise_url_logo', 128)->nullable();
 				$table->timestamps();
 			});
 		}

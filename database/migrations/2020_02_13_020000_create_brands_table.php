@@ -14,8 +14,8 @@ class CreateBrandsTable extends Migration{
 		if (!Schema::hasTable('brands')) {
 			Schema::create('brands', function (Blueprint $table) {
 				$table->increments('id')->unsigned();
-				$table->string('name', 45);
-				$table->string('url_logo', 128);
+				$table->string('brand_name', 45);
+				$table->string('brand_url_logo', 128)->nullable();
 				$table->timestamps();
 			});
 		}
