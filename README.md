@@ -27,8 +27,8 @@
 - $composer update
 - $cp .env.example .env
 - $composer dump-autoload
-- Crear BBDD en local
-- $php artisan migrate
+- $php artisan migrate:refresh --seed
+- $php artisan key:generate
 
 ## Idea
 Crear un proyecto donde se cubra la necesidad de gestionar la agenda de empresas de servicio de proximidad 

@@ -15,7 +15,7 @@ class UsersTableSeeder extends Seeder{
         $user->user_name="Administrador";
         $user->user_type="admin";
         $user->user_email="admin@krimonet.com";
-		$user->user_password="adminKrimonet%2020";
+		$user->user_password=bcrypt("adminKrimonet%2020");
         $user->save();
 
         $user = new App\User();
@@ -23,7 +23,7 @@ class UsersTableSeeder extends Seeder{
         $user->user_name="Cliente1 - Administrador";
         $user->user_type="client";
         $user->user_email="client1@krimonet.com";
-		$user->user_password="client1%2020";
+		$user->user_password=bcrypt("client1%2020");
         $user->save();
 		
 		$user->brands()->attach(App\Brand::all()->where("id", 1)->first->id, ["brand_user_type"=>"admin"]);

@@ -16,7 +16,10 @@ return [
     'paths' => [
         resource_path('views'),
     ],
-
+	
+	'themes_paths'=>"views/themes",
+	'themes_defaultTheme'=>"themes.theme_default",
+	'themes_defaultTheme_url'=>"themes/theme_default",
     /*
     |--------------------------------------------------------------------------
     | Compiled View Path

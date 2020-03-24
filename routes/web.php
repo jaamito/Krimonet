@@ -20,4 +20,7 @@ Auth::routes();
 
 Auth::routes();
 
+Route::get('/admin', 'AdminController@index')->name('admin')->middleware('auth');
+Route::get('/logout', 'Auth\LoginController@logout')->name('logout')->middleware('auth');
+
 Route::get('/home', 'HomeController@index')->name('home');
